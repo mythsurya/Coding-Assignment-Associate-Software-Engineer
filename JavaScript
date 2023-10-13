@@ -1,0 +1,20 @@
+                                                     //Reverse every word in a sentence:
+def reverse_words_in_sentence(sentence):
+    words = sentence.split()  # Split the sentence into words
+    reversed_words = [word[::-1] for word in words]  # Reverse each word
+    reversed_sentence = ' '.join(reversed_words)  # Reconstruct the sentence
+
+    return reversed_sentence
+
+# Example usage:
+input_sentence = input("Enter a sentence: ")
+reversed_sentence = reverse_words_in_sentence(input_sentence)
+print("Reversed Sentence:", reversed_sentence)
+                                                     //Sort an array in descending order:
+def sort_array_descending(arr):
+    arr.sort(reverse=True)  # Sort the array in descending order
+
+# Example usage:
+input_array = [5, 3, 1, 4, 2]
+sort_array_descending(input_array)
+print("Sorted Array in Descending Order:", input_array)
